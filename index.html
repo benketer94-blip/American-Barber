@@ -155,77 +155,55 @@
             </article>
           </div>
 
-          <p class="note">Walk-ins welcome • Cash &amp; card accepted</p>
+          <p class="note">Walk-ins welcome • Cash only</p>
         </div>
       </section>
 
       <div class="barber-pole" aria-hidden="true"></div>
 
-      <section class="products">
+      <section class="products" id="products">
         <div class="container">
           <header class="section-title">
-            <h2>Premium Products</h2>
+            <h2>Chat With Us</h2>
             <div class="subhead">
               <span></span>
-              <strong>Style That Lasts</strong>
+              <strong>Book via WhatsApp</strong>
               <span></span>
             </div>
           </header>
 
-          <div class="product-grid">
-            <button
-              class="product-card product-card--blue"
-              type="button"
-              data-product="Hair Gel - Strong Hold"
-            >
-              <div class="product-icon">
-                <svg viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="M7 13.5c0 3 2.2 5.5 5 5.5s5-2.5 5-5.5c0-2.6-3-5-5-8-2 3-5 5.4-5 8Z" />
-                  <path d="M5 10c-1.7 1.7-3 3.4-3 5.5C2 18 3.8 20 6.1 20" />
-                  <path d="M15 4c2 2.3 4 4.5 4 7" />
-                </svg>
+          <div class="chat-shell">
+            <div class="chat-card">
+              <div class="chat-bubbles" aria-hidden="true">
+                <div class="chat-bubble chat-bubble--barber">
+                  Hi! Looking for a cut or shave?
+                </div>
+                <div class="chat-bubble chat-bubble--user">
+                  Yes, I’d like to book today.
+                </div>
               </div>
-              <h3>Hair Gel</h3>
-              <strong>Strong Hold</strong>
-              <p>Professional-grade styling gel for all-day hold</p>
-              <span>Reserve Product</span>
-            </button>
 
-            <button
-              class="product-card product-card--red"
-              type="button"
-              data-product="Hair Spray - Finishing Touch"
-            >
-              <div class="product-icon">
-                <svg viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="M3 12h10a4 4 0 1 0-4-4" />
-                  <path d="M4 6h5" />
-                  <path d="M4 18h9a3 3 0 1 0-3-3" />
-                </svg>
-              </div>
-              <h3>Hair Spray</h3>
-              <strong>Finishing Touch</strong>
-              <p>Lock in your style with lasting control</p>
-              <span>Reserve Product</span>
-            </button>
+              <form class="chat-form" id="whatsapp-chat-form">
+                <label for="whatsapp-message">Your message</label>
+                <textarea
+                  id="whatsapp-message"
+                  name="whatsapp-message"
+                  rows="4"
+                  placeholder="Tell us what you need..."
+                >Hello American Barber, I would like to book an appointment.</textarea>
+                <button class="button button--primary" type="submit">
+                  Send on WhatsApp
+                </button>
+              </form>
 
-            <button
-              class="product-card product-card--gold"
-              type="button"
-              data-product="Mousse - Volume & Texture"
-            >
-              <div class="product-icon">
-                <svg viewBox="0 0 24 24" aria-hidden="true">
-                  <circle cx="9" cy="9" r="4" />
-                  <circle cx="15" cy="15" r="4" />
-                  <circle cx="16" cy="7" r="2" />
-                </svg>
-              </div>
-              <h3>Mousse</h3>
-              <strong>Volume &amp; Texture</strong>
-              <p>Lightweight formula for natural body</p>
-              <span>Reserve Product</span>
-            </button>
+              <p class="chat-note">
+                This opens a WhatsApp chat with
+                <a href="https://wa.me/351911541306" target="_blank" rel="noopener">
+                  +351 911 541 306
+                </a>
+                using the number listed on the site.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -351,8 +329,8 @@
                 <path d="M12 6v6l4 2" />
               </svg>
               <strong>Hours</strong>
-              <span>Mon - Sat: 9:00 - 19:00</span>
-              <small>Sunday: Closed</small>
+              <span>Mon - Fri: 9:00 - 17:00</span>
+              <small>Weekend: Closed</small>
             </div>
 
             <a href="mailto:golanketer@gmail.com">
@@ -403,28 +381,6 @@
         <span>Proudly Serving Cabanas de Tavira Since 2010</span>
       </div>
     </footer>
-
-    <div class="reserve-modal" id="reserve-modal" aria-hidden="true">
-      <div class="reserve-modal__panel" role="dialog" aria-modal="true" aria-labelledby="reserve-title">
-        <button class="reserve-modal__close" type="button" aria-label="Close reservation menu">
-          <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M18 6 6 18" />
-            <path d="m6 6 12 12" />
-          </svg>
-        </button>
-
-        <p class="reserve-modal__eyebrow">Product Reservation</p>
-        <h2 id="reserve-title">Reserve Product</h2>
-        <p class="reserve-modal__product" id="reserve-product">Hair Gel - Strong Hold</p>
-
-        <form id="reserve-form">
-          <label for="pickup-date">Pickup date</label>
-          <input id="pickup-date" name="pickup-date" type="date" required />
-          <p class="reserve-modal__error" id="reserve-error" aria-live="polite"></p>
-          <button class="button button--primary" type="submit">Reserve</button>
-        </form>
-      </div>
-    </div>
 
     <script src="script.js"></script>
   </body>
