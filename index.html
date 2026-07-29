@@ -1,0 +1,431 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>American Barber</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Cg fill='none' stroke='%23d93b34' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='6'/%3E%3Ccircle cx='12' cy='36' r='6'/%3E%3Cpath d='M16.5 16.5 40 40M16.5 31.5 40 8M23 24l5 5'/%3E%3C/g%3E%3C/svg%3E"
+    />
+    <meta
+      name="description"
+      content="Classic American barbershop craftsmanship in Cabanas de Tavira, Algarve."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <section class="hero" id="top">
+        <div class="hero__bg"></div>
+        <div class="hero__overlay"></div>
+        <div class="hero__content">
+          <div class="scissors scissors--hero" aria-hidden="true">
+            <svg viewBox="0 0 48 48" role="img">
+              <circle cx="12" cy="12" r="6" />
+              <circle cx="12" cy="36" r="6" />
+              <path d="M16.5 16.5 40 40" />
+              <path d="M16.5 31.5 40 8" />
+              <path d="M23 24l5 5" />
+            </svg>
+          </div>
+
+          <h1>American<br />Barber</h1>
+
+          <div class="subhead">
+            <span></span>
+            <strong>Classic Cuts &amp; Clean Shaves</strong>
+            <span></span>
+          </div>
+
+          <p>
+            All-American barbershop craftsmanship on the sun-drenched shores of
+            Cabanas de Tavira, Algarve
+          </p>
+
+          <div class="hero__actions">
+            <a class="button button--primary" href="#services">View Services</a>
+            <a class="button button--ghost" href="#contact">Book Now</a>
+          </div>
+
+          <div class="hero__chips" aria-label="Contact details">
+            <a
+              class="chip"
+              href="https://maps.google.com/?q=R.+Cmte.+Henrique+de+Brito+17,+8800-591+Cabanas,+Tavira"
+              target="_blank"
+              rel="noopener"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+              Cabanas de Tavira, Algarve
+            </a>
+            <a class="chip" href="tel:+351911541306">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.35 1.9.66 2.81a2 2 0 0 1-.45 2.11L8.05 9.91a16 16 0 0 0 6.04 6.04l1.27-1.27a2 2 0 0 1 2.11-.45c.91.31 1.85.53 2.81.66A2 2 0 0 1 22 16.92Z" />
+              </svg>
+              +351 911 541 306
+            </a>
+          </div>
+        </div>
+        <div class="scroll-indicator" aria-hidden="true"><span></span></div>
+      </section>
+
+      <div class="barber-pole" aria-hidden="true"></div>
+
+      <section class="services" id="services">
+        <div class="stripe-bg" aria-hidden="true"></div>
+        <div class="container">
+          <header class="section-title section-title--light">
+            <h2>Services &amp; Pricing</h2>
+            <div class="subhead">
+              <span></span>
+              <strong>Honest Prices, Quality Cuts</strong>
+              <span></span>
+            </div>
+          </header>
+
+          <div class="service-grid">
+            <article class="service-card">
+              <div class="scissors" aria-hidden="true">
+                <svg viewBox="0 0 48 48">
+                  <circle cx="12" cy="12" r="6" />
+                  <circle cx="12" cy="36" r="6" />
+                  <path d="M16.5 16.5 40 40" />
+                  <path d="M16.5 31.5 40 8" />
+                  <path d="M23 24l5 5" />
+                </svg>
+              </div>
+              <h3>Haircut</h3>
+              <p class="price">€14</p>
+              <p>Classic American-style cut with precision fading</p>
+            </article>
+
+            <article class="service-card">
+              <div class="scissors" aria-hidden="true">
+                <svg viewBox="0 0 48 48">
+                  <circle cx="12" cy="12" r="6" />
+                  <circle cx="12" cy="36" r="6" />
+                  <path d="M16.5 16.5 40 40" />
+                  <path d="M16.5 31.5 40 8" />
+                  <path d="M23 24l5 5" />
+                </svg>
+              </div>
+              <h3>Beard Trim</h3>
+              <p class="price">€10</p>
+              <p>Sharp, clean beard shaping and grooming</p>
+            </article>
+
+            <article class="service-card service-card--deal">
+              <div class="badge">Save €4</div>
+              <div class="scissors" aria-hidden="true">
+                <svg viewBox="0 0 48 48">
+                  <circle cx="12" cy="12" r="6" />
+                  <circle cx="12" cy="36" r="6" />
+                  <path d="M16.5 16.5 40 40" />
+                  <path d="M16.5 31.5 40 8" />
+                  <path d="M23 24l5 5" />
+                </svg>
+              </div>
+              <h3>Haircut + Beard</h3>
+              <p class="price">€20 <del>€24</del></p>
+              <p>The full treatment - hair and beard perfection</p>
+            </article>
+
+            <article class="service-card">
+              <div class="scissors" aria-hidden="true">
+                <svg viewBox="0 0 48 48">
+                  <circle cx="12" cy="12" r="6" />
+                  <circle cx="12" cy="36" r="6" />
+                  <path d="M16.5 16.5 40 40" />
+                  <path d="M16.5 31.5 40 8" />
+                  <path d="M23 24l5 5" />
+                </svg>
+              </div>
+              <h3>Highlights</h3>
+              <p class="price price--small">from €50</p>
+              <p>Professional color highlights and styling</p>
+            </article>
+          </div>
+
+          <p class="note">Walk-ins welcome • Cash &amp; card accepted</p>
+        </div>
+      </section>
+
+      <div class="barber-pole" aria-hidden="true"></div>
+
+      <section class="products">
+        <div class="container">
+          <header class="section-title">
+            <h2>Premium Products</h2>
+            <div class="subhead">
+              <span></span>
+              <strong>Style That Lasts</strong>
+              <span></span>
+            </div>
+          </header>
+
+          <div class="product-grid">
+            <button
+              class="product-card product-card--blue"
+              type="button"
+              data-product="Hair Gel - Strong Hold"
+            >
+              <div class="product-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M7 13.5c0 3 2.2 5.5 5 5.5s5-2.5 5-5.5c0-2.6-3-5-5-8-2 3-5 5.4-5 8Z" />
+                  <path d="M5 10c-1.7 1.7-3 3.4-3 5.5C2 18 3.8 20 6.1 20" />
+                  <path d="M15 4c2 2.3 4 4.5 4 7" />
+                </svg>
+              </div>
+              <h3>Hair Gel</h3>
+              <strong>Strong Hold</strong>
+              <p>Professional-grade styling gel for all-day hold</p>
+              <span>Reserve Product</span>
+            </button>
+
+            <button
+              class="product-card product-card--red"
+              type="button"
+              data-product="Hair Spray - Finishing Touch"
+            >
+              <div class="product-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M3 12h10a4 4 0 1 0-4-4" />
+                  <path d="M4 6h5" />
+                  <path d="M4 18h9a3 3 0 1 0-3-3" />
+                </svg>
+              </div>
+              <h3>Hair Spray</h3>
+              <strong>Finishing Touch</strong>
+              <p>Lock in your style with lasting control</p>
+              <span>Reserve Product</span>
+            </button>
+
+            <button
+              class="product-card product-card--gold"
+              type="button"
+              data-product="Mousse - Volume & Texture"
+            >
+              <div class="product-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <circle cx="9" cy="9" r="4" />
+                  <circle cx="15" cy="15" r="4" />
+                  <circle cx="16" cy="7" r="2" />
+                </svg>
+              </div>
+              <h3>Mousse</h3>
+              <strong>Volume &amp; Texture</strong>
+              <p>Lightweight formula for natural body</p>
+              <span>Reserve Product</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <div class="barber-pole" aria-hidden="true"></div>
+
+      <section class="story">
+        <div class="container">
+          <header class="section-title">
+            <h2>Americana Meets Algarve</h2>
+            <div class="subhead">
+              <span></span>
+              <strong>Where Two Worlds Collide</strong>
+              <span></span>
+            </div>
+          </header>
+
+          <div class="story-main">
+            <figure class="story-photo">
+              <img src="assets/cabanas-hero.jpg" alt="Cabanas de Tavira village street" />
+              <figcaption>Cabanas de Tavira</figcaption>
+            </figure>
+
+            <div class="story-copy">
+              <div class="story-heading">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M4 21V5a2 2 0 0 1 2-2h2.5c2.5 0 3.4 2 5.9 2H20v11h-5.6c-2.5 0-3.4-2-5.9-2H6" />
+                </svg>
+                <h3>The Story</h3>
+              </div>
+              <p>
+                Classic American barbering tradition brought to one of Portugal's
+                most beautiful fishing villages. We're not just a barbershop -
+                we're a cultural collision.
+              </p>
+              <p>
+                Located in <strong>Cabanas de Tavira</strong>, a sun-soaked
+                village on the edge of the Ria Formosa lagoon, where traditional
+                fishing boats bob in turquoise waters and terracotta-roofed homes
+                bake in the Algarve heat.
+              </p>
+              <p>
+                We bring <strong>timeless American barbershop craftsmanship</strong>
+                - precision fades, hot towel shaves, classic pompadours - to locals
+                and visitors looking for quality cuts in paradise.
+              </p>
+              <div class="stats">
+                <div><strong>15+</strong><span>Years Experience</span></div>
+                <div><strong>5000+</strong><span>Happy Clients</span></div>
+                <div><strong>100%</strong><span>Satisfaction</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="feature-grid">
+            <article class="feature feature--blue">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M3 8c3 0 3-2 6-2s3 2 6 2 3-2 6-2" />
+                <path d="M3 13c3 0 3-2 6-2s3 2 6 2 3-2 6-2" />
+                <path d="M3 18c3 0 3-2 6-2s3 2 6 2 3-2 6-2" />
+              </svg>
+              <h3>Ria Formosa</h3>
+              <p>Steps from the protected lagoon nature reserve, one of Portugal's seven natural wonders</p>
+            </article>
+
+            <article class="feature feature--red">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 2v4" />
+                <path d="M12 18v4" />
+                <path d="m4.9 4.9 2.8 2.8" />
+                <path d="m16.3 16.3 2.8 2.8" />
+                <path d="M2 12h4" />
+                <path d="M18 12h4" />
+                <circle cx="12" cy="12" r="5" />
+              </svg>
+              <h3>Algarve Sun</h3>
+              <p>300+ days of sunshine a year in Portugal's golden southern coast</p>
+            </article>
+
+            <article class="feature feature--photo">
+              <img src="assets/cabanas-boats.jpg" alt="Fishing boats in Cabanas" />
+              <div>Fishing Village Charm</div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <div class="barber-pole" aria-hidden="true"></div>
+
+      <section class="contact" id="contact">
+        <div class="container">
+          <header class="section-title">
+            <h2>Visit Us</h2>
+            <div class="subhead">
+              <span></span>
+              <strong>Walk-ins Welcome</strong>
+              <span></span>
+            </div>
+          </header>
+
+          <div class="contact-grid">
+            <a href="https://maps.google.com/?q=R.+Cmte.+Henrique+de+Brito+17,+8800-591+Cabanas,+Tavira">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+              <strong>Address</strong>
+              <span>R. Cmte. Henrique de Brito 17</span>
+              <small>8800-591 Cabanas, Tavira</small>
+            </a>
+
+            <a href="tel:+351911541306">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.35 1.9.66 2.81a2 2 0 0 1-.45 2.11L8.05 9.91a16 16 0 0 0 6.04 6.04l1.27-1.27a2 2 0 0 1 2.11-.45c.91.31 1.85.53 2.81.66A2 2 0 0 1 22 16.92Z" />
+              </svg>
+              <strong>Phone</strong>
+              <span>+351 911 541 306</span>
+            </a>
+
+            <div>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M12 6v6l4 2" />
+              </svg>
+              <strong>Hours</strong>
+              <span>Mon - Sat: 9:00 - 19:00</span>
+              <small>Sunday: Closed</small>
+            </div>
+
+            <a href="mailto:golanketer@gmail.com">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4 4h16v16H4z" />
+                <path d="m22 6-10 7L2 6" />
+              </svg>
+              <strong>Email</strong>
+              <span>golanketer@gmail.com</span>
+            </a>
+          </div>
+
+          <div class="map">
+            <iframe
+              title="American Barber Location"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3189.0446!2d-7.5969!3d37.1282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ab4e0d0c0c0c0%3A0x0!2sR.%20Cmte.%20Henrique%20de%20Brito%2017%2C%208800-591%20Cabanas%2C%20Tavira!5e0!3m2!1sen!2spt!4v1234567890"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+
+          <div class="cta">
+            <h2>Ready For A Fresh Cut?</h2>
+            <p>
+              Want to schedule an appointment? 
+            </p>
+            <a class="button button--primary" href="tel:+351911541306">Call Now</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container footer-inner">
+        <div>
+          <h2>American Barber</h2>
+          <p>Cabanas de Tavira, Algarve</p>
+        </div>
+        <nav aria-label="Footer">
+          <a href="#services">Services</a>
+          <a href="#contact">Contact</a>
+          <a href="tel:+351911541306">+351 911 541 306</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 American Barber</span>
+        <span>Classic Cuts, Coastal Living</span>
+        <span>Proudly Serving Cabanas de Tavira Since 2010</span>
+      </div>
+    </footer>
+
+    <div class="reserve-modal" id="reserve-modal" aria-hidden="true">
+      <div class="reserve-modal__panel" role="dialog" aria-modal="true" aria-labelledby="reserve-title">
+        <button class="reserve-modal__close" type="button" aria-label="Close reservation menu">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M18 6 6 18" />
+            <path d="m6 6 12 12" />
+          </svg>
+        </button>
+
+        <p class="reserve-modal__eyebrow">Product Reservation</p>
+        <h2 id="reserve-title">Reserve Product</h2>
+        <p class="reserve-modal__product" id="reserve-product">Hair Gel - Strong Hold</p>
+
+        <form id="reserve-form">
+          <label for="pickup-date">Pickup date</label>
+          <input id="pickup-date" name="pickup-date" type="date" required />
+          <p class="reserve-modal__error" id="reserve-error" aria-live="polite"></p>
+          <button class="button button--primary" type="submit">Reserve</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
