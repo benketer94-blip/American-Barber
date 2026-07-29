@@ -401,110 +401,91 @@ section {
 }
 
 .products {
-  background: var(--cream);
+  background: linear-gradient(180deg, var(--cream) 0%, #f2efe9 100%);
 }
 
-.product-grid {
+.chat-shell {
+  display: flex;
+  justify-content: center;
+}
+
+.chat-card {
+  width: min(100%, 760px);
+  padding: 36px;
+  border: 4px solid var(--line);
+  background: var(--card);
+  box-shadow: var(--shadow);
+}
+
+.chat-bubbles {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 32px;
+  gap: 16px;
+  margin-bottom: 24px;
 }
 
-.product-card {
-  min-height: 376px;
-  padding: 40px;
-  text-align: center;
-  border-radius: 0;
-  cursor: pointer;
-  font: inherit;
+.chat-bubble {
+  display: inline-block;
+  max-width: min(80%, 420px);
+  padding: 16px 18px;
+  border-radius: 18px;
+  font-weight: 600;
+  line-height: 1.5;
 }
 
-.product-card:focus-visible {
-  outline: 4px solid var(--gold);
-  outline-offset: 6px;
+.chat-bubble--barber {
+  background: var(--blue);
+  color: white;
 }
 
-.product-card::before {
-  content: "";
-  position: absolute;
-  inset: 0 0 auto 0;
-  height: 8px;
-  background: currentColor;
+.chat-bubble--user {
+  margin-left: auto;
+  background: var(--red-soft);
+  color: white;
 }
 
-.product-card::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 0;
-  height: 0;
-  border-left: 32px solid transparent;
-  border-bottom: 32px solid currentColor;
-  opacity: 0.16;
+.chat-form {
+  display: grid;
+  gap: 14px;
 }
 
-.product-card--blue {
+.chat-form label {
+  font-family: "Bebas Neue", Impact, sans-serif;
+  font-size: 1.1rem;
+  text-transform: uppercase;
   color: var(--blue);
 }
 
-.product-card--red {
-  color: var(--red-soft);
-}
-
-.product-card--gold {
-  color: var(--gold);
-}
-
-.product-icon {
-  width: 80px;
-  height: 80px;
-  margin: 0 auto 28px;
-  display: grid;
-  place-items: center;
-  border: 4px solid currentColor;
-  border-radius: 50%;
-}
-
-.product-icon svg {
-  width: 38px;
-  height: 38px;
-  fill: none;
-  stroke: currentColor;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-width: 1.8;
-}
-
-.product-card h3 {
-  margin: 0 0 18px;
+.chat-form textarea {
+  width: 100%;
+  min-height: 120px;
+  border: 2px solid var(--line);
+  padding: 14px 16px;
+  resize: vertical;
+  font: inherit;
   color: var(--ink);
-  font-size: 2.4rem;
-  text-transform: uppercase;
+  background: white;
 }
 
-.product-card strong {
-  display: block;
-  margin-bottom: 34px;
-  font-size: 1.15rem;
-  text-transform: uppercase;
+.chat-form textarea:focus {
+  outline: 3px solid rgba(221, 163, 56, 0.45);
+  border-color: var(--gold);
 }
 
-.product-card p {
-  color: var(--muted);
-  margin: 0 0 34px;
-  font-weight: 500;
+.chat-form .button {
+  width: 100%;
+  max-width: 260px;
+  margin-top: 8px;
 }
 
-.product-card span {
+.chat-note {
+  margin: 20px 0 0;
   color: var(--muted);
   font-size: 0.95rem;
-  text-transform: uppercase;
 }
 
-.product-card:hover span,
-.product-card:focus-visible span {
-  color: currentColor;
+.chat-note a {
+  color: var(--red);
+  font-weight: 700;
 }
 
 .story {
